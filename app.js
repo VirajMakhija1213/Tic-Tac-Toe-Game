@@ -47,6 +47,7 @@
     const resetGame = () => {
         turnO = true; // Reset the turn to O's turn
         enableBoxes();
+        resetBtn.classList.remove("hide");
         msgContainer.classList.add("hide"); // Hide the winner message
     };
 
@@ -66,6 +67,7 @@
 
     const showWinner = (winner) => {
         msg.innerText = `Congratulations, ${winner} wins!`;
+        resetBtn.classList.add("hide");
         msgContainer.classList.remove("hide"); // Show winner message
         disabledBoxes();  // Disable all boxes after a win
     };
@@ -87,6 +89,7 @@
         // Check for a draw if all boxes are filled and no winner
         if ([...boxes].every(box => box.innerText !== "")) {
             msg.innerText = `It's a draw!`;
+            resetBtn.classList.add("hide");
             msgContainer.classList.remove("hide");
             disabledBoxes();
         }
