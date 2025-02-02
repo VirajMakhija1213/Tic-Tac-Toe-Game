@@ -1,5 +1,5 @@
 # Tic-Tac-Toe-Game
-# https://viraj1213.github.io/Tic-Tac-Toe-Game/
+# https://virajmakhija1213.github.io/Tic-Tac-Toe-Game/
 
 
 This is a simple Tic Tac Toe game implemented with HTML, CSS, and JavaScript. It allows two players to take turns playing the classic game, with dynamic updates and an appealing UI. The game has the following features:
